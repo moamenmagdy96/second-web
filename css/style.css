@@ -1,0 +1,332 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+body{
+    background-color: #eeeeee;
+}
+.container{
+    margin: auto;
+    width: 80%;
+}
+#header{
+    height: 20vh;
+    /* width: 80%; */
+display: flex;
+flex-direction: row;
+align-items: center;
+align-content: space-around;
+flex-wrap: nowrap;
+}
+.logo{
+width: 200px;
+background-size: cover;}
+.logo img{
+    margin: 10px;
+    width: 200 px;
+    height: 100px;
+    margin-left: 40px;
+}
+.navbar{
+    font-size: 20px;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li {
+    display: inline-block;
+    padding: 10px;}
+.navbar-icon{width: 100px;
+    
+}
+.drop-dowen{
+    position: absolute;
+    top: 80px;
+    left: 300px;
+    visibility: hidden;
+    transition: .5s;
+    border: 1px solid black;
+}
+.th{width: 50px;
+    text-decoration: underline dotted;
+}
+.drop:hover .drop-dowen {visibility: visible;
+    transform: scale(1);}
+.li{position: relative;
+width: 100%;
+height: 25px;}
+.li::before{
+position: absolute;
+content: "";
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+height: 25px;
+width: 0;
+transition: .5s;}
+.li:hover::before{
+    width: 101%;
+}.li::after {
+    position: absolute;
+    content: "";
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 0px;
+    width: 100%;
+    left: 0px;
+    transition: .5s;
+}
+
+.li:hover::after {
+    height: 27px;
+}
+   
+.sec1{
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    background-image: url(../image/gray-sofa-living-room-with-free-space.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    }
+.sec1-dis{width: 50%;
+    align-self: center;
+    text-align: center;
+    align-self: flex-start;
+    margin-top: 130px;
+}
+.sec1-dis p{
+font-size: 70px;
+color: white;
+text-transform:capitalize;
+line-height: 100px;
+}
+.sec1-btn{
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+    border: none;
+    color: gray;
+}
+/* sec2 */
+.sec2{
+    width: 80%;
+    margin: auto;margin-top: 50px;
+}
+.sec2-head{
+  margin: auto;
+  left: 550px;
+  top: 50px;
+  text-align: center;
+}
+.sec2-head p{
+    font-size: 50px;
+    text-transform: capitalize;
+    color: darkgoldenrod;
+}
+.sec2-head span{display: block;
+    width: 150px;
+    height: 2px;
+    background-color: rgb(165, 126, 42);
+    top: 100px;
+    left: 550px;
+margin: auto;
+}
+.sec2-grid{
+    top: 200px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 80%;
+    column-gap: 20px;
+    column-width: 30%;
+    left: 150px;
+}
+.sec2-grid img{width: 250px;
+}
+.div5{background-color: rgba(190, 172, 147, 0.288);
+grid-column: 1/3;
+margin-top: 30px;
+}
+.arrow{
+    visibility: hidden;
+    font-size: 25px;
+    padding-left: 60px;
+}
+.div4:hover .arrow{visibility: visible;}
+.div1:hover .arrow {
+    visibility: visible;
+}
+.div2:hover .arrow {
+    visibility: visible;
+}
+.div3:hover .arrow {
+    visibility: visible;
+}
+.div6:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+.div7:hover {
+    transform: scale(1.1);
+        transition: all .5s;
+}
+.div6{
+    margin-top: 30px;
+}
+.div7{
+    margin-top: 30px;
+}
+.discount-desc{
+    background-color: rgb(236, 220, 195);
+    position: relative;
+    
+}
+.top{
+    position: absolute;
+}
+.top i{position: absolute;
+    font-size: 80px;
+    color: rgb(131, 83, 10);
+    top: 40px;
+}
+.top h2{position: absolute; width: 200px;
+    top:20px;
+    left: 80px;
+}
+.top span{position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.discount-desc p{align-items: flex-start;
+    font-size: 18px;
+    line-height: 30px;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+}
+.bullets{position: absolute;
+    width: 300px;
+    top: 280px;
+    left: 220px;
+    display: flex;
+    justify-content: flex-end;
+}
+.bullets span{
+    width: 50px;
+    height: 2px;
+    background-color: rgb(112, 69, 3);
+    margin: 10px;
+}
+
+
+
+/*///////////////////////// */
+.sec3{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.sec3-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+}
+.grid1 img{width: 250px;
+    }
+ .change{
+ display: flex;
+ margin-bottom: 55px;
+ margin-top: 30px;
+ }
+ .grid1 i{
+     color: gold;
+ }
+ .change-icon{
+     border-right: 1px solid black;
+    text-align: center;
+width: 20%;}
+     .change-icon1{
+         transition: all .5s;
+         height: 55px;
+     }
+     .first{background-image: url(../image/service-icon.png);
+                background-repeat: no-repeat;background-position: center 5px;
+     }
+     .first:hover{
+        background-position: center -85px;
+     }
+  .second {
+             background-image: url(../image/service-icon.png);
+             background-repeat: no-repeat;
+             background-position: center -180px;
+         }
+    
+ .second:hover {
+             background-position: center -270px;
+         }
+.therd {
+    background-image: url(../image/service-icon.png);
+    background-repeat: no-repeat;
+    background-position: center -365px;
+}
+.therd:hover {
+    background-position: center -455px;
+}
+.fourth {
+    background-image: url(../image/service-icon.png);
+    background-repeat: no-repeat;
+    background-position: center -545px;
+}
+
+.fourth:hover {
+    background-position: center -635px;
+}
+.fifth {
+    background-image: url(../image/service-icon.png);
+    background-repeat: no-repeat;
+    background-position: center -730px;
+}
+
+.fifth:hover {
+    background-position: center -820px;
+}
+.last{border-right: none;}
+/* .sec3-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+} */
+.list{text-align: center;
+    margin: auto;
+    list-style: none;
+}
+.list li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.sec3-head {
+    margin: auto;
+    text-align: center;
+}
+
+.sec3-head p {
+    font-size: 50px;
+    text-transform: capitalize;
+    color: darkgoldenrod;
+}
+
+.sec3-head span {
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: rgb(165, 126, 42);
+    top: 100px;
+    left: 550px;
+    margin: auto;
+}
+.grid1{transition: .5s;}
+.grid1:hover{
+    transform: scale(1.1);
+}
